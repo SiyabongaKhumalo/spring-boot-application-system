@@ -1,0 +1,9 @@
+services:
+  postgres:
+    container_name:postgres-sql-bsn
+    image: postgres
+    environment:
+      POSTGRES_USER:username
+      POSTGRES_PASSWORD: password
+      PDDATA:/var/lib/postgresqls/data
+      POSTGRES_DB:user-application
